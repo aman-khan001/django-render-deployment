@@ -46,6 +46,13 @@ Before you begin, ensure you have:
 
    ALLOWED_HOSTS = ['your-render-url.onrender.com'] # or allow all host --> '*'
 
+   TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+         ...
+   }]
+   
    MIDDLEWARE = [
        'django.middleware.security.SecurityMiddleware',
        'whitenoise.middleware.WhiteNoiseMiddleware',  # Add this line
