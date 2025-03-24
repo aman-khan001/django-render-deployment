@@ -100,7 +100,7 @@ Before you begin, ensure you have:
 2. Connect your **GitHub repository**.
 3. Set the **Build Command**:
    ```sh
-   pip install -r requirements.txt && python manage.py migrate && python manage.py collectstatic --noinput
+   pip install -r requirements.txt 
    ```
 4. Set the **Start Command**:
    ```sh
