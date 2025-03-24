@@ -53,6 +53,12 @@ Before you begin, ensure you have:
    ]
 
    STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+
+   STATIC_URL = '/static/'
+   MEDIA_URL = '/media/'
+
+   STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
+   MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
    ```
 
 3. Create a `requirements.txt` file:
